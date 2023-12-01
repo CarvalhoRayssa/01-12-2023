@@ -1,0 +1,72 @@
+   /* Váriavel de Ambiente */
+
+   :root{
+    --branco: white;
+    --azul: rgb(0, 128, 255);
+    --azulDark: rgb(30, 30, 75);
+    --cinza: rgb(177, 176, 176);
+    /*--gradiente: linear-gradient(244deg, blueviolet, blue);*/
+   }
+/*Eu posso digitar as duas primeiras letras para já sair o código*/ 
+   body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-color:rgb(134, 79, 163);*/
+   /*background-color:var(--gradiente);*/
+   background: url(paisagem.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+
+   .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   background-color:rgba(0,0,0,0.6);
+   color: #ffffff;
+
+   /*Espaçamento Interno */
+   padding: 3rem 4rem;
+   border-radius: 1rem;
+   }
+
+   .container input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid violet;
+    outline: none;
+    padding: .4rem;
+    width: 50%;
+    font-size: 1rem;
+    color: #ffffff;
+   }
+
+   .container input::placeholder{
+    color: #ffffff;
+   }
+   
+   .container input:focus{
+    border-bottom: 1px solid var pink;
+   }
+
+   button{
+    padding: .8rem;
+    width: 80%;
+    font-size: 1rem;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+/*pseudoclasse é o que o cliente faz que pode "afetar o site" -mudar-*/
+.container button:hover{
+    background-color: purple;
+} 
